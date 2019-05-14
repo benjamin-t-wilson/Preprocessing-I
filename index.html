@@ -1,19 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">My Work</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="home headline">
+      <section class="home hl-top">
+        <img class="home headline-img" src="" />
+        <h1>Name - Job Title</h1>
+        <p>Catch Phrase!</p>
+      </section>
+      <section class="home hl-bot">
+        <p>
+          some stuff here maybe? Secondary sections may be unnecessary in
+          headline
+        </p>
+        <a href="#">Button if using bottom</a>
+      </section>
+    </section>
+    <section class="home content">
+      <section class="home about-me">
+        <h2>About Me</h2>
+        <p>Interesting words</p>
+      </section>
+      <section class="home skills">
+        <h2>Yeah I got Skills</h2>
+        <ul>
+          <li>thing 1</li>
+          <li>thing 2</li>
+          <li>thing 3</li>
+        </ul>
+      </section>
+      <section class="home history">
+        <h2>History</h2>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Software Used</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Apple</td>
+            <td>Software Engineer</td>
+            <td>HTML/CSS</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <footer>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">My Work</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p>Copyright</p>
+    </footer>
+  </body>
 </html>
