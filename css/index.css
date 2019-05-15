@@ -1,1 +1,284 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+.container header {
+  text-align: right;
+  margin: 0 0 30px 10%;
+  padding: 13px;
+  background: lightgray;
+  height: auto;
+  border-radius: 40px 0 0 40px;
+  border: 2px solid #6c756b;
+}
+@media (max-width: 500px) {
+  .container header {
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+.container header nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5%;
+  font-size: 1.2rem;
+}
+.container header nav a:hover {
+  color: white;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    margin: 10px;
+    border: 2px solid #6c756b;
+    padding: 10px;
+  }
+}
+.container h2 {
+  font-size: 1.5rem;
+}
+.container .headline {
+  width: 100%;
+  background: lightgray;
+  padding: 30px 20px;
+  margin: 30px 0;
+}
+.container .headline img {
+  width: 20%;
+}
+.container .headline h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px dashed #6c756b;
+}
+.container .headline p {
+  font-size: 1.3rem;
+}
+.container .content {
+  background: lightgray;
+  border: 2px solid #6c756b;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media (max-width: 500px) {
+  .container .content {
+    flex-flow: column nowrap;
+  }
+}
+.container .content .about-me {
+  width: 30%;
+  margin: 0 2%;
+}
+@media (max-width: 500px) {
+  .container .content .about-me {
+    width: 95%;
+  }
+}
+.container .content .about-me p {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+.container .content .skills {
+  width: 60%;
+  margin: 0 2%;
+}
+@media (max-width: 500px) {
+  .container .content .skills {
+    width: 95%;
+  }
+}
+.container .content .skills li {
+  padding: 10px 30px;
+  margin: 10px;
+  background: lightgray;
+  border: 2px solid #6c756b;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.container .content .history {
+  width: 100%;
+  margin: 0 2%;
+}
+@media (max-width: 500px) {
+  .container .content .history {
+    width: 95%;
+  }
+}
+.container .content .history table {
+  margin: 20px 0;
+  width: 100%;
+}
+.container .content .history table tr {
+  width: 100%;
+  background: #6c756b;
+}
+.container .content .history table tr:nth-child(even) {
+  background: lightgray;
+}
+.container .content .history table th {
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+.container .content .history table td {
+  padding: 10px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+.container .contact {
+  margin: 30px 0;
+  width: 100%;
+  background: lightgray;
+}
+.container .contact h2 {
+  margin: 20px 0;
+}
+.container .contact p {
+  font-size: 1rem;
+}
+.container footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
